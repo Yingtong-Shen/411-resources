@@ -19,3 +19,15 @@ User story 3: As a beginner, I want to know if GiggleGit can help me learn how t
       Provides detailed prompts and interactive guides for common commands. Simplify some command formats.
     Ticket 2: Add self-debugging function.
       When a command error is detected, it automatically finds optimization methods and solutions through big data.
+
+2. Formal Requirements
+Goal: Based on GiggleGit packages, create a highly interactive and interesting syncing tool for the collaboration platform.
+Non-Goal: Building advanced diff algorithms or implementing third-party integrations.
+Non-Functional Requirement 1: Access Control for PMs
+  Functional Requirement: 
+    Added user rights management module, defining roles including Admin, PM, and Researcher
+    Automatically create a table to record the operation user, timestamp, operation type and changed content, and support filtering logs by time or user in the management panel.
+Non-Functional Requirement 2: Expressive Collaboration and Reactions
+  Functional Requirement:
+    After each synchronization is completed, it will jump to a quick sharing interface where you can send emojis or short voice effects, and when other members see them, they can like or comment on each other.
+    Statistics on user groups participating in the interaction and interactive content.
