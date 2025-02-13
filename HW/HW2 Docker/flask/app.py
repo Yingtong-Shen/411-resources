@@ -1,4 +1,4 @@
-from flask import Flask, make_response
+from flask import Flask, make_response, request
 from os import getenv
 
 app = Flask(__name__)
@@ -8,6 +8,17 @@ def hello():
     response = make_response(
         {
             'response': 'Hello, World!',
+            'status': 200
+        }
+    )
+    return response
+
+# Add a /repeat route to accept URL query parameters
+@app.route('/repeat')
+def repeat():
+    response = make_response(
+        {
+            'response': request.args['input'],
             'status': 200
         }
     )
