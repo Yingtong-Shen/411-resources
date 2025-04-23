@@ -1,0 +1,33 @@
+1. Agile
+Theme: Get GiggleGit demo into a stable enough alpha to start onboarding some adventurous clients.
+Epic: Onboarding experience.
+User story 1: As a vanilla git power-user that has never seen GiggleGit before, I want to know if GiggleGit is similar to Git and whether I can quickly get started with GiggleGit.
+  Task: Help users quickly learn GiggleGit.
+    Ticket 1: Implement "ggit help" command.
+      Implemented "ggit help" command in command line and providing subcommand instructions in the form of something like "ggit help merge".
+    Ticket 2: Provide Git-to-GiggleGit command comparison.
+      Write a document that maps GiggleGit to Git commands. Document which commands behave the same and which behave differently.
+User story 2: As a team lead onboarding an experienced GiggleGit user, I want to be able to manage team projects conveniently and securely.
+  Task: Multi-person project management model.
+    Ticket 1: Implement Role-Based Access Control for Projects.
+      Supports assigning roles such as Owner, Maintainer, Developer. Ensure that only administrators or project owners can modify permissions or delete projects.
+    Ticket 2: Enable Secure Project Sharing via Access Tokens.
+      Generate limited-time access tokens for temporary collaboration.
+User story 3: As a beginner, I want to know if GiggleGit can help me learn how to write good code.
+  Task: Helping beginners learn to code.
+    Ticket 1: Implement a ‘Beginner Mode’.
+      Provides detailed prompts and interactive guides for common commands. Simplify some command formats.
+    Ticket 2: Add self-debugging function.
+      When a command error is detected, it automatically finds optimization methods and solutions through big data.
+
+2. Formal Requirements
+Goal: Based on GiggleGit packages, create a highly interactive and interesting syncing tool for the collaboration platform.
+Non-Goal: Building advanced diff algorithms or implementing third-party integrations.
+Non-Functional Requirement 1: Access Control for PMs
+  Functional Requirement: 
+    Added user rights management module, defining roles including Admin, PM, and Researcher
+    Automatically create a table to record the operation user, timestamp, operation type and changed content, and support filtering logs by time or user in the management panel.
+Non-Functional Requirement 2: Expressive Collaboration and Reactions
+  Functional Requirement:
+    After each synchronization is completed, it will jump to a quick sharing interface where you can send emojis or short voice effects, and when other members see them, they can like or comment on each other.
+    Statistics on user groups participating in the interaction and interactive content.
